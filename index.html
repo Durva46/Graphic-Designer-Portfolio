@@ -7,408 +7,395 @@
   <meta name="description" content="Portfolio of Durva Pavan Patel — Graphic Designer, Logo Designer, and Visual Creator. B.Tech AI/ML student with a passion for design and branding.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">DURVA</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#hero" class="brand">DURVA</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
-        <li><a href="#logo">Logos</a></li>
         <li><a href="#saar">SAAR</a></li>
-        <li><a href="#media">Media</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="nav-right">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="profile" id="profile">
+          <img src="assets/images/profile.jpg" alt="Durva Pavan Patel" class="profile-avatar">
+          <span class="profile-caret">&#9662;</span>
+          <div class="profile-menu" id="profileMenu">
+            <div class="profile-menu-head">Durva Pavan Patel</div>
+            <a href="mailto:durva.ai25@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/durva-patel-616650374" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="tel:+918460806861">Call Me</a>
+            <a href="#saar">Featured: SAAR</a>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-orb hero-orb--1"></div>
-      <div class="hero-orb hero-orb--2"></div>
-      <div class="hero-orb hero-orb--3"></div>
+    <div class="hero-backdrop">
+      <img src="assets/images/saar.png" alt="SAAR Yearbook" data-hero-img="assets/images/saar.png" data-hero-title="SAAR — AI/ML Department Yearbook" data-hero-desc="The entire magazine I designed this year — visual direction, layouts, typography, and page composition.">
+      <div class="hero-fade hero-fade--bottom"></div>
+      <div class="hero-fade hero-fade--top"></div>
+      <div class="hero-fade hero-fade--left"></div>
     </div>
-    <div class="hero-content reveal">
-      <p class="hero-tag">Portfolio</p>
-      <h1 class="hero-name">Durva Pavan<br>Patel</h1>
-      <p class="hero-role">Graphic Designer &bull; Logo Designer &bull; Visual Creator</p>
-      <p class="hero-desc">B.Tech AI/ML student with a passion for graphic design, branding, visual communication, and creative digital experiences.</p>
-      <div class="hero-btns">
-        <a href="#work" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-glass">Contact Me</a>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="hero-badge-n">D</span>
+        <span>&nbsp;GRAPHIC DESIGNER &bull; VISUAL CREATOR</span>
       </div>
-    </div>
-    <div class="hero-glass-card" aria-hidden="true"></div>
-  </section>
-
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-portrait reveal">
-          <img src="assets/images/profile.jpg" alt="Durva Pavan Patel portrait" loading="lazy">
-        </div>
-        <div class="about-text reveal">
-          <h2 class="section-title">About Me</h2>
-          <p>I am a B.Tech student in Artificial Intelligence & Machine Learning with a strong interest in graphic design and visual creativity. I enjoy turning ideas into simple, meaningful, and visually engaging designs.</p>
-          <p>I have been exploring graphic design for the past two years &mdash; working on logos, social media posts, posters, event creatives, magazines, and promotional content. I am also part of my department's Media Team, where I handle the visual content for different departmental activities and events.</p>
-          <div class="about-badges">
-            <span class="badge">AI/ML Student</span>
-            <span class="badge">Media Team — Dept of AI&ML</span>
-            <span class="badge">Graphic Designer</span>
-          </div>
-        </div>
+      <h1 class="hero-title">Durva Pavan Patel</h1>
+      <div class="hero-meta">
+        <span class="hero-rank">TOP DESIGN</span>
+        <span class="hero-role">Logo Designer &bull; Editorial &bull; Social Media &bull; UI/UX</span>
+      </div>
+      <p class="hero-desc">B.Tech AI/ML student with two years of experience in graphic design — branding, logos, posters, magazines, event creatives, and visual communication.</p>
+      <div class="hero-buttons">
+        <a href="#work" class="btn btn-play">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          View My Work
+        </a>
+        <button class="btn btn-info" id="heroMoreInfo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          More Info
+        </button>
       </div>
     </div>
   </section>
 
-  <section class="section work" id="work">
-    <div class="container">
-      <h2 class="section-title reveal">My Design Work</h2>
-      <p class="section-sub reveal">A selection of design projects across branding, editorial, social media, and visual communication.</p>
-      <div class="filter-bar reveal" id="filterBar">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="logo">Logo Design</button>
-        <button class="filter-btn" data-filter="social">Social Media</button>
-        <button class="filter-btn" data-filter="editorial">Editorial</button>
-        <button class="filter-btn" data-filter="events">Events</button>
-        <button class="filter-btn" data-filter="ux">UI/UX</button>
-      </div>
-      <div class="gallery" id="gallery">
+  <section class="rows" id="work">
 
-        <div class="gallery-item reveal" data-category="logo" data-img="assets/images/logo-1.jpg" data-title="Logo Design — Identity Mark 01" data-desc="A clean, minimal logo built around a meaningful symbol.">
-          <div class="gallery-card">
-            <img src="assets/images/logo-1.jpg" alt="Logo design 01" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Logo Design</span>
-              <h3>Identity Mark 01</h3>
+    <div class="row" data-row>
+      <h2 class="row-title">Featured Work</h2>
+      <div class="row-shell">
+        <button class="row-arrow row-arrow--left" data-row-prev aria-label="Previous">&lsaquo;</button>
+        <div class="row-track" data-row-track>
+          <div class="card" data-img="assets/images/saar.png" data-title="SAAR — AI/ML Department Yearbook" data-desc="Designed the entire SAAR magazine this year — visual direction, layouts, typography, composition, and presentation. Last year I contributed the logo and a small part.">
+            <div class="card-media"><img src="assets/images/saar.png" alt="SAAR Yearbook" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-rank">Top 1</span><span class="card-year">Editorial</span></div>
+              <h3 class="card-title">SAAR — Yearbook</h3>
+              <p class="card-desc">AI/ML dept magazine — full editorial design.</p>
             </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card" data-img="assets/images/eth-1.png" data-title="ETHEREAL — Freshers Event" data-desc="Poster and visual identity for the college freshers event.">
+            <div class="card-media"><img src="assets/images/eth-1.png" alt="ETHEREAL poster" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-rank">New</span><span class="card-year">Events</span></div>
+              <h3 class="card-title">ETHEREAL</h3>
+              <p class="card-desc">Freshers event poster &amp; identity.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card" data-img="assets/images/expert-talk.png" data-title="Expert Talk — Department Poster" data-desc="Event announcement poster for the AI/ML department, distributed on the department Instagram page.">
+            <div class="card-media"><img src="assets/images/expert-talk.png" alt="Expert Talk poster" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-rank">Featured</span><span class="card-year">Media Team</span></div>
+              <h3 class="card-title">Expert Talk</h3>
+              <p class="card-desc">Dept event announcement poster.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card" data-img="assets/images/logo-3.jpg" data-title="Logo Design — Identity Mark" data-desc="A refined visual identity for an organization.">
+            <div class="card-media"><img src="assets/images/logo-3.jpg" alt="Logo design" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-rank">Branding</span><span class="card-year">Logo Design</span></div>
+              <h3 class="card-title">Identity Mark</h3>
+              <p class="card-desc">Logo &amp; brand identity.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card" data-img="assets/images/eth-3.png" data-title="ETHEREAL — Freshers Event" data-desc="Additional promotional creative for the freshers event.">
+            <div class="card-media"><img src="assets/images/eth-3.png" alt="ETHEREAL poster" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-rank">New</span><span class="card-year">Events</span></div>
+              <h3 class="card-title">ETHEREAL</h3>
+              <p class="card-desc">Freshers event creative.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
           </div>
         </div>
-
-        <div class="gallery-item reveal" data-category="logo" data-img="assets/images/logo-2.png" data-title="Logo Design — Identity Mark 02" data-desc="A bold and expressive mark for a brand identity.">
-          <div class="gallery-card">
-            <img src="assets/images/logo-2.png" alt="Logo design 02" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Logo Design</span>
-              <h3>Identity Mark 02</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal" data-category="logo" data-img="assets/images/logo-3.jpg" data-title="Logo Design — Identity Mark 03" data-desc="A refined visual identity for an organization.">
-          <div class="gallery-card">
-            <img src="assets/images/logo-3.jpg" alt="Logo design 03" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Logo Design</span>
-              <h3>Identity Mark 03</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal" data-category="logo" data-img="assets/images/logo-4.jpg" data-title="Logo Design — Identity Mark 04" data-desc="A simple yet distinctive logo concept.">
-          <div class="gallery-card">
-            <img src="assets/images/logo-4.jpg" alt="Logo design 04" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Logo Design</span>
-              <h3>Identity Mark 04</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal" data-category="editorial" data-img="assets/images/saar.png" data-title="SAAR — AI/ML Department Yearbook" data-desc="Complete editorial design: layout, typography, visual direction, and composition.">
-          <div class="gallery-card">
-            <img src="assets/images/saar.png" alt="SAAR Yearbook" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Editorial</span>
-              <h3>SAAR Yearbook</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal" data-category="social" data-img="assets/images/expert-talk.png" data-title="Expert Talk — Department Poster" data-desc="Event announcement poster for the AI/ML department.">
-          <div class="gallery-card">
-            <img src="assets/images/expert-talk.png" alt="Expert Talk poster" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Social Media</span>
-              <h3>Expert Talk Poster</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal" data-category="events" data-img="assets/images/eth-1.png" data-title="ETHEREAL — Freshers Event Poster" data-desc="Promotional poster and visual identity for the college freshers event.">
-          <div class="gallery-card">
-            <img src="assets/images/eth-1.png" alt="Ethereal poster" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Events</span>
-              <h3>ETHEREAL Poster</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal" data-category="events" data-img="assets/images/eth-2.png" data-title="ETHEREAL — Freshers Event Poster" data-desc="Promotional poster and visual identity for the college freshers event.">
-          <div class="gallery-card">
-            <img src="assets/images/eth-2.png" alt="Ethereal poster" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Events</span>
-              <h3>ETHEREAL Poster</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal" data-category="events" data-img="assets/images/eth-3.png" data-title="ETHEREAL — Freshers Event Poster" data-desc="Promotional poster and visual identity for the college freshers event.">
-          <div class="gallery-card">
-            <img src="assets/images/eth-3.png" alt="Ethereal poster" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Events</span>
-              <h3>ETHEREAL Poster</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal" data-category="events" data-img="assets/images/eth-4.jpg" data-title="ETHEREAL — Freshers Event Poster" data-desc="Additional promotional creative for the event.">
-          <div class="gallery-card">
-            <img src="assets/images/eth-4.jpg" alt="Ethereal poster" loading="lazy">
-            <div class="gallery-info">
-              <span class="gallery-cat">Events</span>
-              <h3>ETHEREAL Poster</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery-item reveal" data-category="ux" data-title="PASHU — AI Bovine Breed ID" data-desc="UI/UX and frontend visual design for a Smart India Hackathon project." data-link="https://vercel.com/d7-c612/pashu">
-          <div class="gallery-card gallery-card--ux">
-            <div class="gallery-ux-inner">
-              <svg class="gallery-ux-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              <span class="gallery-ux-title">PASHU</span>
-              <span class="gallery-ux-sub">AI-Based Bovine Breed Identification</span>
-              <a href="https://vercel.com/d7-c612/pashu" target="_blank" rel="noopener" class="btn btn-glass btn-sm">View Live App &rarr;</a>
-            </div>
-          </div>
-        </div>
-
+        <button class="row-arrow row-arrow--right" data-row-next aria-label="Next">&rsaquo;</button>
       </div>
     </div>
-  </section>
 
-  <section class="section section--alt logo-section" id="logo">
-    <div class="container">
-      <div class="logo-header reveal">
-        <h2 class="section-title">Logo Design &amp; Brand Identity</h2>
-        <p>I enjoy creating logos that are simple, meaningful, and connected to the identity of the organization or project.</p>
-      </div>
-      <div class="logo-grid">
-        <div class="logo-item logo-item--tall reveal" data-img="assets/images/logo-3.jpg" data-title="Logo Design" data-desc="A refined visual identity for an organization.">
-          <img src="assets/images/logo-3.jpg" alt="Logo design" loading="lazy">
+    <div class="row" data-row>
+      <h2 class="row-title">Logo Design &amp; Brand Identity</h2>
+      <div class="row-shell">
+        <button class="row-arrow row-arrow--left" data-row-prev aria-label="Previous">&lsaquo;</button>
+        <div class="row-track" data-row-track>
+          <div class="card card--tall" data-img="assets/images/logo-3.jpg" data-title="Logo Design — Identity Mark" data-desc="A refined visual identity for an organization.">
+            <div class="card-media"><img src="assets/images/logo-3.jpg" alt="Logo design" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Logo Design</span></div>
+              <h3 class="card-title">Identity Mark</h3>
+              <p class="card-desc">Clean, meaningful brand identity.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card card--tall" data-img="assets/images/logo-1.jpg" data-title="Logo Design — Identity Mark" data-desc="A clean, minimal logo built around a meaningful symbol.">
+            <div class="card-media"><img src="assets/images/logo-1.jpg" alt="Logo design" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Logo Design</span></div>
+              <h3 class="card-title">Identity Mark</h3>
+              <p class="card-desc">Minimal, symbolic logo.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card card--tall" data-img="assets/images/logo-2.png" data-title="Logo Design — Identity Mark" data-desc="A bold and expressive mark for a brand identity.">
+            <div class="card-media"><img src="assets/images/logo-2.png" alt="Logo design" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Logo Design</span></div>
+              <h3 class="card-title">Identity Mark</h3>
+              <p class="card-desc">Bold, expressive mark.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card card--tall" data-img="assets/images/logo-4.jpg" data-title="Logo Design — Identity Mark" data-desc="A simple yet distinctive logo concept.">
+            <div class="card-media"><img src="assets/images/logo-4.jpg" alt="Logo design" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Logo Design</span></div>
+              <h3 class="card-title">Identity Mark</h3>
+              <p class="card-desc">Simple, distinctive logo.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
         </div>
-        <div class="logo-item reveal" data-img="assets/images/logo-1.jpg" data-title="Logo Design" data-desc="A clean, minimal logo built around a meaningful symbol.">
-          <img src="assets/images/logo-1.jpg" alt="Logo design" loading="lazy">
-        </div>
-        <div class="logo-item reveal" data-img="assets/images/logo-2.png" data-title="Logo Design" data-desc="A bold and expressive mark for a brand identity.">
-          <img src="assets/images/logo-2.png" alt="Logo design" loading="lazy">
-        </div>
-        <div class="logo-item reveal" data-img="assets/images/logo-4.jpg" data-title="Logo Design" data-desc="A simple yet distinctive logo concept.">
-          <img src="assets/images/logo-4.jpg" alt="Logo design" loading="lazy">
-        </div>
+        <button class="row-arrow row-arrow--right" data-row-next aria-label="Next">&rsaquo;</button>
       </div>
     </div>
-  </section>
 
-  <section class="section saar" id="saar">
-    <div class="container">
-      <div class="saar-hero reveal">
-        <img src="assets/images/saar.png" alt="SAAR Yearbook cover" class="saar-cover" loading="lazy">
-      </div>
-      <div class="saar-content">
-        <div class="saar-text reveal">
-          <p class="saar-eyebrow">Featured Project</p>
-          <h2 class="section-title">SAAR &mdash; AI/ML Department Yearbook</h2>
-          <p class="saar-subtitle">Editorial Design &bull; Magazine Design &bull; Visual Identity</p>
-          <div class="saar-prose">
-            <p>Last year, I contributed to SAAR and worked on a small part of the magazine &mdash; creating the logo and some graphic elements.</p>
-            <p>This year, I designed the <strong>entire SAAR magazine</strong>, including its overall visual direction, layouts, typography, page composition, and presentation. It was a significant step in my design journey &mdash; from contributor to lead designer.</p>
-          </div>
-        </div>
-        <div class="saar-role reveal">
-          <h3>My Role</h3>
-          <div class="saar-tags">
-            <span>Logo &amp; Identity Design</span>
-            <span>Overall Magazine Design</span>
-            <span>Page Layouts</span>
-            <span>Typography</span>
-            <span>Visual Direction</span>
-            <span>Composition</span>
-            <span>Consistency Across Sections</span>
-          </div>
-        </div>
-        <div class="saar-progression reveal">
-          <div class="saar-step">
-            <div class="saar-step-dot"></div>
-            <div class="saar-step-content">
-              <h4>Last Year</h4>
-              <p>Contributed to SAAR &mdash; designed the logo and worked on a small part of the magazine.</p>
+    <div class="row" data-row>
+      <h2 class="row-title">Event &amp; Promotional Design</h2>
+      <div class="row-shell">
+        <button class="row-arrow row-arrow--left" data-row-prev aria-label="Previous">&lsaquo;</button>
+        <div class="row-track" data-row-track>
+          <div class="card" data-img="assets/images/eth-1.png" data-title="ETHEREAL — Poster 01" data-desc="Promotional poster for the college freshers event.">
+            <div class="card-media"><img src="assets/images/eth-1.png" alt="ETHEREAL poster" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Events</span></div>
+              <h3 class="card-title">ETHEREAL 01</h3>
+              <p class="card-desc">Freshers event poster.</p>
             </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
           </div>
-          <div class="saar-step saar-step--current">
-            <div class="saar-step-dot"></div>
-            <div class="saar-step-content">
-              <h4>This Year</h4>
-              <p>Designed the entire SAAR magazine &mdash; from visual direction to final presentation. Fully designed by me.</p>
+          <div class="card" data-img="assets/images/eth-2.png" data-title="ETHEREAL — Poster 02" data-desc="Promotional poster for the college freshers event.">
+            <div class="card-media"><img src="assets/images/eth-2.png" alt="ETHEREAL poster" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Events</span></div>
+              <h3 class="card-title">ETHEREAL 02</h3>
+              <p class="card-desc">Freshers event poster.</p>
             </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card" data-img="assets/images/eth-3.png" data-title="ETHEREAL — Poster 03" data-desc="Visual identity for the freshers event.">
+            <div class="card-media"><img src="assets/images/eth-3.png" alt="ETHEREAL poster" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Events</span></div>
+              <h3 class="card-title">ETHEREAL 03</h3>
+              <p class="card-desc">Event visual identity.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
+          </div>
+          <div class="card" data-img="assets/images/eth-4.jpg" data-title="ETHEREAL — Poster 04" data-desc="Additional promotional creative for the event.">
+            <div class="card-media"><img src="assets/images/eth-4.jpg" alt="ETHEREAL poster" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Events</span></div>
+              <h3 class="card-title">ETHEREAL 04</h3>
+              <p class="card-desc">Event promotional creative.</p>
+            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section media" id="media">
-    <div class="container">
-      <h2 class="section-title reveal">AI/ML Department &mdash; Media Team</h2>
-      <p class="section-sub reveal">As a member of my department's Media Team, I design visual content used for departmental activities, events, announcements, achievements, and social media. I have been handling the visuals for the department page since last year &mdash; this is my second year working with the team.</p>
-      <div class="media-grid reveal">
-        <div class="media-post">
-          <img src="assets/images/expert-talk.png" alt="Expert Talk poster design" loading="lazy" data-img="assets/images/expert-talk.png" data-title="Expert Talk — Department Event Poster" data-desc="Event announcement poster for the AI/ML department, designed for social media distribution.">
-          <div class="media-post-caption">
-            <span class="media-post-tag">Instagram / Dept Page</span>
-            <p>Expert Talk &mdash; Event Announcement Poster</p>
-          </div>
-        </div>
-      </div>
-      <div class="media-cta reveal">
-        <p>You can find more of my department creatives on the official Instagram page, which I have been designing for since my first year.</p>
-        <a href="https://www.instagram.com/aiml_cspit" target="_blank" rel="noopener" class="btn btn-glass">Follow @aiml_cspit on Instagram &rarr;</a>
+        <button class="row-arrow row-arrow--right" data-row-next aria-label="Next">&rsaquo;</button>
       </div>
     </div>
-  </section>
 
-  <section class="section section--alt events" id="events">
-    <div class="container">
-      <h2 class="section-title reveal">Event &amp; Promotional Design</h2>
-
-      <div class="event-block reveal">
-        <div class="event-header">
-          <h3>ETHEREAL</h3>
-          <span class="event-tag">College Freshers Event</span>
-        </div>
-        <p class="event-desc">Posters and promotional creatives for the college freshers event.</p>
-        <div class="event-gallery">
-          <div class="event-img" data-img="assets/images/eth-1.png" data-title="ETHEREAL — Poster 01" data-desc="Promotional poster for the college freshers event."><img src="assets/images/eth-1.png" alt="Ethereal poster 1" loading="lazy"></div>
-          <div class="event-img" data-img="assets/images/eth-2.png" data-title="ETHEREAL — Poster 02" data-desc="Promotional poster for the college freshers event."><img src="assets/images/eth-2.png" alt="Ethereal poster 2" loading="lazy"></div>
-          <div class="event-img" data-img="assets/images/eth-3.png" data-title="ETHEREAL — Poster 03" data-desc="Visual identity for the freshers event."><img src="assets/images/eth-3.png" alt="Ethereal poster 3" loading="lazy"></div>
-          <div class="event-img" data-img="assets/images/eth-4.jpg" data-title="ETHEREAL — Poster 04" data-desc="Additional promotional creative for the event."><img src="assets/images/eth-4.jpg" alt="Ethereal poster 4" loading="lazy"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section pashu" id="pashu">
-    <div class="container">
-      <div class="pashu-inner reveal">
-        <div class="pashu-text">
-          <p class="saar-eyebrow">Featured Project</p>
-          <h2 class="section-title">PASHU &mdash; AI-Based Bovine Breed Identification</h2>
-          <p class="saar-subtitle">UI/UX &bull; Visual Design &bull; Frontend</p>
-          <p>A Smart India Hackathon project focused on AI-powered Indian bovine breed identification. I contributed to the UI/UX and frontend visual design of the project.</p>
-          <div class="pashu-features">
-            <div class="pashu-feat">
-              <div class="pashu-feat-icon">&#8681;</div>
-              <span>Image Upload</span>
+    <div class="row" data-row>
+      <h2 class="row-title">Media Team &mdash; AI/ML Department</h2>
+      <div class="row-shell">
+        <button class="row-arrow row-arrow--left" data-row-prev aria-label="Previous">&lsaquo;</button>
+        <div class="row-track" data-row-track>
+          <div class="card card--post" data-img="assets/images/expert-talk.png" data-title="Expert Talk — Department Event Poster" data-desc="Event announcement poster for the AI/ML department, designed for social media distribution.">
+            <div class="card-media"><img src="assets/images/expert-talk.png" alt="Expert Talk poster" loading="lazy"></div>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Media Team</span></div>
+              <h3 class="card-title">Expert Talk</h3>
+              <p class="card-desc">Dept event announcement poster.</p>
             </div>
-            <div class="pashu-feat">
-              <div class="pashu-feat-icon">&#9881;</div>
-              <span>AI Analysis</span>
-            </div>
-            <div class="pashu-feat">
-              <div class="pashu-feat-icon">&#9733;</div>
-              <span>Prediction Results</span>
-            </div>
-            <div class="pashu-feat">
-              <div class="pashu-feat-icon">&#9432;</div>
-              <span>Breed Information</span>
-            </div>
-            <div class="pashu-feat">
-              <div class="pashu-feat-icon">&#9996;</div>
-              <span>User-friendly Interface</span>
-            </div>
+            <span class="card-play" aria-hidden="true">&#9654;</span>
           </div>
-          <a href="https://vercel.com/d7-c612/pashu" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:1.5rem;">View Live App &rarr;</a>
-        </div>
-        <div class="pashu-preview">
-          <div class="pashu-browser">
-            <div class="pashu-browser-bar">
-              <span></span><span></span><span></span>
+          <a class="card card--post card--link" href="https://www.instagram.com/aiml_cspit" target="_blank" rel="noopener">
+            <div class="card-media card-media--ig">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zM12 0C8.7 0 8.3 0 7 .1 5.7.2 4.8.4 4 0.7 3.1 1 2.4 1.5 1.8 2.1 1.2 2.7.7 3.4.4 4.3.1 5.1-.1 6-.1 7.3-.2 8.7-.2 9.1-.2 12s0 3.3.1 4.7c.1 1.3.3 2.2.5 3 0.3.9.8 1.6 1.4 2.2.6.6 1.3 1.1 2.2 1.4.8.3 1.7.5 3 .5 1.3.1 1.7.1 4.7.1s3.4 0 4.7-.1c1.3-.1 2.2-.3 3-.5.9-.3 1.6-.8 2.2-1.4.6-.6 1.1-1.3 1.4-2.2.3-.8.5-1.7.5-3 .1-1.4.1-1.8.1-4.7s0-3.3-.1-4.7c-.1-1.3-.3-2.2-.5-3-.3-.9-.8-1.6-1.4-2.2C21.3 1.2 20.6.7 19.7.4 18.9.1 18-.1 16.7-.1 15.3-.2 14.9-.2 12-.2zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.4a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9z"/></svg>
+              <span class="card-ig-label">@aiml_cspit</span>
             </div>
-            <div class="pashu-browser-body">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              <span>Live Application Preview</span>
-              <a href="https://vercel.com/d7-c612/pashu" target="_blank" rel="noopener" class="btn btn-glass btn-sm">Open &rarr;</a>
+            <div class="card-info">
+              <div class="card-meta"><span class="card-year">Instagram</span></div>
+              <h3 class="card-title">Department Page</h3>
+              <p class="card-desc">2nd year running the visuals. Browse the page.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt skills" id="skills">
-    <div class="container">
-      <h2 class="section-title reveal">Skills</h2>
-      <div class="skills-grid reveal">
-        <div class="skill-card glass">
-          <h3>Design</h3>
-          <div class="skill-tags">
-            <span>Logo Design</span><span>Branding</span><span>Poster Design</span><span>Social Media Design</span><span>Magazine Design</span><span>Typography</span><span>Layout Design</span><span>Visual Identity</span><span>Photo Editing</span>
-          </div>
-        </div>
-        <div class="skill-card glass">
-          <h3>Technical</h3>
-          <div class="skill-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>C/C++</span><span>Python</span><span>Java</span><span>AI/ML</span>
-          </div>
-        </div>
-        <div class="skill-card glass">
-          <h3>Creative</h3>
-          <div class="skill-tags">
-            <span>Photography</span><span>Sketching</span><span>Visual Storytelling</span><span>Creative Concept Development</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="contact-inner reveal">
-        <h2 class="section-title">Let's Create Something Great</h2>
-        <p>Have a project, collaboration, or design opportunity in mind? I'd love to hear from you.</p>
-        <div class="contact-card glass">
-          <a href="mailto:durva.ai25@gmail.com" class="contact-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-            <span>durva.ai25@gmail.com</span>
-          </a>
-          <a href="https://www.linkedin.com/in/durva-patel-616650374" target="_blank" rel="noopener" class="contact-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7 11v5M7 8v.01M11 16v-4.5c0-1.5 1-2 2-2s1.5.5 1.5 2V16"/><path d="M11 11v5"/></svg>
-            <span>linkedin.com/in/durva-patel-616650374</span>
-          </a>
-          <a href="tel:+918460806861" class="contact-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.4-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.8 2.1z"/></svg>
-            <span>+91 84608 06861</span>
           </a>
         </div>
+        <button class="row-arrow row-arrow--right" data-row-next aria-label="Next">&rsaquo;</button>
+      </div>
+    </div>
+
+    <div class="row" data-row>
+      <h2 class="row-title">My Toolkit</h2>
+      <div class="row-shell">
+        <button class="row-arrow row-arrow--left" data-row-prev aria-label="Previous">&lsaquo;</button>
+        <div class="row-track" data-row-track>
+          <div class="card card--skill" data-title="Design" data-desc="Logo Design · Branding · Poster Design · Social Media Design · Magazine Design · Typography · Layout Design · Visual Identity · Photo Editing">
+            <div class="card-skill">
+              <h3 class="card-title">Design</h3>
+              <p>Logo Design &bull; Branding &bull; Posters &bull; Social Media &bull; Magazines &bull; Typography &bull; Layout &bull; Visual Identity &bull; Photo Editing</p>
+            </div>
+          </div>
+          <div class="card card--skill" data-title="Technical" data-desc="HTML · CSS · JavaScript · C/C++ · Python · Java · AI/ML">
+            <div class="card-skill">
+              <h3 class="card-title">Technical</h3>
+              <p>HTML &bull; CSS &bull; JavaScript &bull; C/C++ &bull; Python &bull; Java &bull; AI/ML</p>
+            </div>
+          </div>
+          <div class="card card--skill" data-title="Creative" data-desc="Photography · Sketching · Visual Storytelling · Creative Concept Development">
+            <div class="card-skill">
+              <h3 class="card-title">Creative</h3>
+              <p>Photography &bull; Sketching &bull; Visual Storytelling &bull; Concept Development</p>
+            </div>
+          </div>
+        </div>
+        <button class="row-arrow row-arrow--right" data-row-next aria-label="Next">&rsaquo;</button>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="feature" id="saar">
+    <div class="feature-hero">
+      <img src="assets/images/saar.png" alt="SAAR Yearbook" class="feature-img" loading="lazy">
+      <div class="feature-fade"></div>
+    </div>
+    <div class="feature-body">
+      <div class="feature-topline">
+        <span class="feature-badge">SAAR</span>
+        <span class="feature-tag">Editorial Design &bull; Magazine Design &bull; Visual Identity</span>
+      </div>
+      <h2 class="feature-title">AI/ML Department Yearbook</h2>
+      <p class="feature-synopsis">Last year I contributed to SAAR &mdash; designing the logo and working on a small part of the magazine. This year I designed the <strong>entire magazine</strong>: overall visual direction, layouts, typography, page composition, and final presentation.</p>
+      <div class="feature-chips">
+        <span class="feature-chip">My Role</span>
+        <span>Overall Magazine Design</span>
+        <span>Page Layouts</span>
+        <span>Typography</span>
+        <span>Visual Direction</span>
+        <span>Composition</span>
+        <span>Consistency Across Sections</span>
+      </div>
+      <div class="feature-progression">
+        <div class="feature-step">
+          <span class="feature-step-n">01</span>
+          <div>
+            <h4>Last Year</h4>
+            <p>Contributed to SAAR &mdash; designed the logo and worked on a small part of the magazine.</p>
+          </div>
+        </div>
+        <div class="feature-step feature-step--now">
+          <span class="feature-step-n">02</span>
+          <div>
+            <h4>This Year</h4>
+            <p>Designed the entire SAAR magazine &mdash; from visual direction to final presentation. Fully designed by me.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature feature--project" id="pashu">
+    <div class="feature-body">
+      <div class="feature-topline">
+        <span class="feature-badge feature-badge--dark">PASHU</span>
+        <span class="feature-tag">UI/UX &bull; Visual Design &bull; Frontend</span>
+      </div>
+      <h2 class="feature-title">AI-Based Bovine Breed Identification</h2>
+      <p class="feature-synopsis">A Smart India Hackathon project focused on AI-powered Indian bovine breed identification. I contributed to the UI/UX and frontend visual design &mdash; image upload, AI analysis, prediction results, and breed information screens.</p>
+      <div class="feature-chips">
+        <span class="feature-chip">Included</span>
+        <span>Image Upload</span>
+        <span>AI Analysis</span>
+        <span>Prediction Results</span>
+        <span>Breed Information</span>
+        <span>User-friendly Interface</span>
+      </div>
+      <a href="https://vercel.com/d7-c612/pashu" target="_blank" rel="noopener" class="btn btn-play btn-play--solid">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        Open Live App
+      </a>
+    </div>
+    <div class="feature-hero feature-hero--panel">
+      <div class="panel">
+        <div class="panel-bar"><span></span><span></span><span></span></div>
+        <div class="panel-body">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span>Live Application Preview</span>
+          <a href="https://vercel.com/d7-c612/pashu" target="_blank" rel="noopener" class="btn btn-ghost">Open &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-portrait">
+        <img src="assets/images/profile.jpg" alt="Durva Pavan Patel" loading="lazy">
+      </div>
+      <div class="about-body">
+        <span class="about-label">ABOUT ME</span>
+        <h2 class="about-title">Durva Pavan Patel</h2>
+        <p>I'm a B.Tech student in Artificial Intelligence &amp; Machine Learning with a strong interest in graphic design and visual creativity. I've been exploring design for the past two years &mdash; turning ideas into simple, meaningful, and visually engaging work.</p>
+        <p>I design logos, social media posts, posters, event creatives, magazines, and promotional content. I'm part of my department's Media Team, handling the visual side of the AI/ML department page &mdash; this is my second year with the team.</p>
+        <div class="about-badges">
+          <span>AI/ML Student</span>
+          <span>Media Team &mdash; Dept of AI&ML</span>
+          <span>2 Years in Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <h2 class="contact-title">Let's Create Something Great</h2>
+      <p class="contact-sub">Have a project, collaboration, or design opportunity in mind? I'd love to hear from you.</p>
+      <div class="contact-card">
+        <a href="mailto:durva.ai25@gmail.com" class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          <span>durva.ai25@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/durva-patel-616650374" target="_blank" rel="noopener" class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7 11v5M7 8v.01M11 16v-4.5c0-1.5 1-2 2-2s1.5.5 1.5 2V16"/><path d="M11 11v5"/></svg>
+          <span>linkedin.com/in/durva-patel-616650374</span>
+        </a>
+        <a href="tel:+918460806861" class="contact-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.4-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.8 2.1z"/></svg>
+          <span>+91 84608 06861</span>
+        </a>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Durva Pavan Patel. Designed &amp; built by hand.</p>
-    </div>
+    <p>&copy; 2026 Durva Pavan Patel &mdash; Graphic Designer &amp; Visual Creator. Designed by hand.</p>
   </footer>
 
   <div class="lightbox" id="lightbox">
@@ -418,17 +405,6 @@
       <div class="lightbox-meta">
         <h3 id="lightboxTitle"></h3>
         <p id="lightboxDesc"></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="lightbox" id="logoLightbox">
-    <button class="lightbox-close" id="logoLightboxClose" aria-label="Close">&times;</button>
-    <div class="lightbox-content">
-      <img id="logoLightboxImg" src="" alt="">
-      <div class="lightbox-meta">
-        <h3 id="logoLightboxTitle"></h3>
-        <p id="logoLightboxDesc"></p>
       </div>
     </div>
   </div>
