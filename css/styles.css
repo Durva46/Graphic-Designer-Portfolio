@@ -488,6 +488,17 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 24px;
 }
+.media-cta {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  max-width: 640px;
+}
+.media-cta p { color: var(--text-dim); margin-bottom: 1.25rem; }
 .media-post {
   border-radius: var(--radius-lg);
   overflow: hidden;
